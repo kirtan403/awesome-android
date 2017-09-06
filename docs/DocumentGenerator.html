@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Images · GitBook</title>
+        <title>Documentation Generator · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Camera.html" />
     
-    
-    <link rel="prev" href="Toast.html" />
+    <link rel="prev" href="Device.html" />
     
 
     </head>
@@ -167,7 +165,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="Images.html">
+        <li class="chapter " data-level="1.7" data-path="Images.html">
             
                 <a href="Images.html">
             
@@ -323,7 +321,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.19" data-path="DocumentGenerator.html">
+        <li class="chapter active" data-level="1.19" data-path="DocumentGenerator.html">
             
                 <a href="DocumentGenerator.html">
             
@@ -366,7 +364,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Images</a>
+        <a href="." >Documentation Generator</a>
     </h1>
 </div>
 
@@ -381,15 +379,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="images">Images</h1>
-<h2 id="libraries">Libraries</h2>
-<ul>
-<li><a href="https://github.com/Bilibili/boxing" target="_blank">boxing</a><ul>
-<li>Android multi-media selector based on MVP mode.</li>
-</ul>
-</li>
-<li>&#x200B;</li>
-</ul>
+                                <h1 id="dokka">Dokka</h1>
+<p>Dokka is a documentation engine for Kotlin, performing the same function as javadoc for Java. Just like Kotlin itself, Dokka fully supports mixed-language Java/Kotlin projects. It understands standard Javadoc comments in Java files and <a href="https://kotlinlang.org/docs/reference/kotlin-doc.html" target="_blank">KDoc comments</a> in Kotlin files, and can generate documentation in multiple formats including standard Javadoc, HTML and Markdown.</p>
+<h3 id="using-dokka">Using Dokka</h3>
+<h4 id="using-the-gradle-plugin-in-project-level">Using the Gradle plugin in Project Level</h4>
+<pre><code class="lang-android">buildscript {
+    ext.dokka_version = &apos;0.9.9&apos;
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath &quot;org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}&quot;
+    }
+}
+
+apply plugin: &apos;org.jetbrains.dokka
+</code></pre>
+<h4 id="using-the-gradle-plugin-in-app-level">Using the Gradle plugin in App Level</h4>
+<pre><code class="lang-android">task dokkaJavadoc(type: org.jetbrains.dokka.gradle.DokkaAndroidTask) {
+    outputFormat = &apos;html&apos;
+    outputDirectory = &quot;$buildDir/javadoc&quot;
+}
+</code></pre>
+<h4 id="compilation-process">Compilation Process</h4>
+<p>In terminal run this command <code>gradlew dokkaJavadoc</code>  , After build generation document will generate in following folder : <code>app&gt;build&gt; javadoc &gt;&quot;generated documents&quot;</code>.</p>
 
                                 
                                 </section>
@@ -417,14 +431,10 @@
 
             
                 
-                <a href="Toast.html" class="navigation navigation-prev " aria-label="Previous page: Toast">
+                <a href="Device.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Device">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="Camera.html" class="navigation navigation-next " aria-label="Next page: Camera">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -433,7 +443,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Images","level":"1.7","depth":1,"next":{"title":"Camera","level":"1.8","depth":1,"path":"Camera.md","ref":"Camera.md","articles":[]},"previous":{"title":"Toast","level":"1.6","depth":1,"path":"Toast.md","ref":"Toast.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Images.md","mtime":"2017-09-05T10:58:56.406Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-05T13:34:39.766Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Documentation Generator","level":"1.19","depth":1,"previous":{"title":"Device","level":"1.18","depth":1,"path":"Device.md","ref":"Device.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DocumentGenerator.md","mtime":"2017-09-05T12:19:14.342Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-05T13:34:39.766Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
