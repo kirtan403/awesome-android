@@ -18,6 +18,7 @@
 * [Miscellaneous](Miscellaneous.md)
 * [Git](Git.md)
 * [Device](Device.md)
+* [Documentation Generator](DocumentGenerator.md)
 
 
 
