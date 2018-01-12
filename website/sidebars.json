@@ -1,0 +1,29 @@
+{
+  "docs": {
+    "Summary": [
+		"android-studio",
+		"animations",
+		"annotations",
+		"apk-compression",
+		"camera",
+		"database",
+		"device",
+		"documentation-generator",
+		"images",
+		"layouts",
+		"proguard-snippets",
+		"recycler-view",
+		"runtime-permissions",
+		"toast",
+		"miscellaneous"
+	],
+	"Collections" : [
+		"libraries",
+		"articles",
+		"kotlin"
+	], 
+	"Others": [
+		"git"
+	]
+  }
+}
